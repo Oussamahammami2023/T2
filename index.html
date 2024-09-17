@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Travaux</title>
+  <title>Boutiques</title>
   
   <!-- تضمين مكتبة Font Awesome -->
- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
 
-  style 
+  <!-- إضافة تنسيق CSS داخل وسم <style> -->
+  <style>
     body {
-      font-family: 'Amazon Ember',Arial, sans-serif;
+      font-family: 'Amazon Ember', Arial, sans-serif;
       max-width: 1920px;
       margin: 0 auto;
       padding: 0;
       background-color: #ffffff;
     }
+
     header {
       background-color: #fff;
       color: #000;
@@ -24,327 +26,260 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top:-10px;
+      margin-top: -10px;
     }
+
     .header-content {
       display: flex;
       align-items: center;
     }
+
     .menu-icon {
       font-size: 24px;
-      margin-right: 6px; /* إضافة مسافة بين الأيقونة والعنوان */
-      cursor: pointer; /* تغيير مؤشر الفأرة عند التمرير فوق الأيقونة */
+      margin-right: 6px;
+      cursor: pointer;
     }
+
     .search-title {
       font-size: 22px;
       font-weight: bold;
-      margin-bottom :-2px;
+      margin-bottom: -2px;
     }
+
     .account-icon {
       font-size: 20px;
       cursor: pointer;
-      margin-bottom :-3px;
+      margin-bottom: -3px;
     }
-   container {
-         text-align: center;
-         background-color: #ffffff;
-         border-radius: 10px;
-         padding: 20px;
-         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-         }
-         .title {
-         font-size: 13px;
-         color: #6c757d;
-         margin-bottom :10px;
-         }
-         .balance {
-         font-size: 36px;
-         font-weight: bold;
-         color: #343a40;
-         }
-   .unique-c-1-list {
-display: flex;
-overflow-x: auto;
-padding: 10px 0;
-font-family: Arial, sans-serif;
--ms-overflow-style: none;
-scrollbar-width: none;
-background-color: #fff;
-margin-top: -11px;
-}
 
-.unique-c-1-list::-webkit-scrollbar {
-display: none;
-}
-
-.unique-c-1-item {
-flex-shrink: 0;
-margin-right: 0.5rem;
-padding: 2px 10px;
-border-radius: 24px;
-text-decoration: none;
-color: #000;
-display: flex;
-align-items: center; /* محاذاة عمودية للأيقونة والنص */
-background-color: #D1F801; /* لون الخلفية للعنصر */
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ظل خفيف لجعل الخلفية بارزة */
-}
-
-.unique-c-1-item i {
-font-size: 17px; /* حجم الأيقونة */
-margin-left: -6px; /* إضافة مسافة بين الأيقونة والنص */
-margin-right: 2px;
-background-color: #e9ecef; /* لون خلفية الأيقونة */
-color: #000; /* لون الأيقونة */
-border-radius: 50%; /* يجعل الأيقونة دائرية */
-padding: 10px; /* المسافة حول الأيقونة */
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-/* حجم العنوان داخل العنصر */
-.unique-c-1-item span {
-font-size: 13px; /* حجم العنوان */
-font-weight: 700; /* وزن النص */
-}
-   .group-container-1-2 {
-    display: flex;
-    overflow-x: auto; /* التمرير الأفقي */
-    gap: 10px;
-    padding: 11px 10px 2px 10px;
-    scroll-behavior: smooth;
-    flex-wrap: nowrap; /* منع الالتفاف */
-    align-items: center; /* توسيط العناصر عموديًا */
-    }
-    
-    .group-container-1-2::-webkit-scrollbar {
-    display: none;
-    }
-    
-    .group-container-1-2 {
-    scrollbar-width: none;
-    }
-    
-    .group-1-2 {
-    min-width: 216px;
-    background-size: cover;
-    background-position: center;
-    padding: 85px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    position: relative;
-    margin-top: -10px;
-    }
-    
-    .group-container {
-    display: flex;
-    overflow-x: auto;
-    padding: 1rem 0;
-    background-color: #eee;
-    }
-    
-    .group-item {
-    flex: 0 0 auto;
-    background-color: #fff;
-    margin: 0 0.5rem;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    }
     .container {
-      max-width: 1600px;
-      margin: 0 auto;
-      padding: 1rem;
+      text-align: center;
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-.third-group-list {
-    display: block; /* عرض العناصر في صفوف عمودية */
-    padding: 8px 4px;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    margin-top: 0px;
-    overflow-y: auto; /* تمكين التمرير العمودي إذا لزم الأمر */
+
+    .title {
+      font-size: 13px;
+      color: #6c757d;
+      margin-bottom: 10px;
     }
-    
+
+    .balance {
+      font-size: 36px;
+      font-weight: bold;
+      color: #343a40;
+    }
+
+    .unique-c-1-list {
+      display: flex;
+      overflow-x: auto;
+      padding: 10px 0;
+      font-family: Arial, sans-serif;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      background-color: #fff;
+      margin-top: -11px;
+    }
+
+    .unique-c-1-list::-webkit-scrollbar {
+      display: none;
+    }
+
+    .unique-c-1-item {
+      flex-shrink: 0;
+      margin-right: 0.5rem;
+      padding: 2px 10px;
+      border-radius: 24px;
+      text-decoration: none;
+      color: #000;
+      display: flex;
+      align-items: center;
+      background-color: #D1F801;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .unique-c-1-item i {
+      font-size: 17px;
+      margin-left: -6px;
+      margin-right: 2px;
+      background-color: #e9ecef;
+      color: #000;
+      border-radius: 50%;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .unique-c-1-item span {
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .group-container-1-2 {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 11px 10px 2px 10px;
+      scroll-behavior: smooth;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+
+    .group-container-1-2::-webkit-scrollbar {
+      display: none;
+    }
+
+    .group-1-2 {
+      min-width: 216px;
+      background-size: cover;
+      background-position: center;
+      padding: 85px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      position: relative;
+      margin-top: -10px;
+    }
+
+    .third-group-list {
+      display: block;
+      padding: 8px 4px;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      margin-top: 0px;
+      overflow-y: auto;
+    }
+
     .third-group-item {
-    display: flex;
-    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
-    justify-content: space-between; /* توزيع العناصر بين الأطراف */
-    text-decoration: none;
-    background-color: #fff;
-    padding: 0px; /* تأكد من وجود مسافة داخلية جيدة حول المحتوى */
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px; /* إضافة مسافة بين العناصر في الاتجاه العمودي */
-    width: 100%; /* عرض العنصر ليأخذ المساحة الكاملة المتاحة */
-    position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 15px;
+      width: 100%;
     }
-    
+
     .third-group-item img {
-    width: 81px;
-    height: 71px;
-    border-radius: 15px;
-    overflow: hidden;
-    margin-right: 15px;
+      width: 81px;
+      height: 71px;
+      border-radius: 15px;
+      overflow: hidden;
+      margin-right: 15px;
     }
-    
+
     .third-group-item h4 {
-    font-size: 18.5px;
-    font-weight: 650;
-    color: #000;
-    margin: 0; /* إزالة المسافة حول العنوان الرئيسي */
-    margin-left: -7px;
+      font-size: 18.5px;
+      font-weight: 650;
+      color: #000;
+      margin: 0;
+      margin-left: -7px;
     }
-    
-   .third-group-item .third-group-subtitle {
-    font-size: 14px;
-    color: #888;
-    font-weight: 500;
-    margin-left: auto;
-    margin-right: 12px; /* المسافة بين النص وحدود العنصر */
-    margin-top: 18.5px;
-    text-align: right;
-    position: relative;
-    padding-right: 27px; /* زيادة المسافة لتوفير مساحة كافية للأيقونة */
+
+    .third-group-item .third-group-subtitle {
+      font-size: 14px;
+      color: #888;
+      font-weight: 500;
+      margin-left: auto;
+      margin-right: 12px;
+      margin-top: 18.5px;
+      text-align: right;
+      position: relative;
+      padding-right: 27px;
     }
-    
+
     .third-group-item .third-group-subtitle::after {
-    content: "";
-    display: block;
-    position: absolute;
-    right: 0; /* موقع الأيقونة على يمين العنصر */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 16.5px; /* عرض الصورة */
-    height: 16.5px; /* ارتفاع الصورة */
-    background-image: url('https://cdn.shopify.com/s/files/1/0673/1232/0677/files/IMG_20240902_234624.png?v=1726083415'); /* رابط الصورة */
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* تعديل المسافة بين الأيقونة والنص */
-    padding-left: 8px; /* المسافة بين النص والأيقونة، ضبط هذه القيمة حسب الحاجة */
-    margin-top :-4px;
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 40%;
+      transform: translateY(-50%);
+      width: 13px;
+      height: 13px;
+      background-image: url('https://cdn.shopify.com/s/files/1/0673/1232/0677/files/business.png?v=1726369838');
+      background-size: contain;
+      background-repeat: no-repeat;
     }
-    /* تنسيق النوافذ المنبثقة */
-    .no-scroll {
-  overflow: hidden;
-}
-.popup {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  max-height: 73%;
-  background-color: white;
-  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 20px 20px 0 0;
-  animation: slide-up 0.3s forwards;
-  overflow-y: auto;
-}
 
-.popup-content {
-  padding: 0px;
-  text-align: center;
-}
-
-.popup-title {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  color: #aaa;
-  font-size: 30px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-@keyframes slide-up {
-  from { bottom: -50%; }
-  to { bottom: 0; }
-}
-
-.popup-group-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  width: 97%;
-  margin: 0 auto;
-  margin-bottom :5px;
-}
-.popup-group-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 14px;
-    border-radius: 13px;
-    font-weight: 350;
-    color: #000;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: flex;
-    flex-direction: row; /* تغيير إلى صف لجعل العنوان والعنوان الفرعي في نفس المستوى */
-    justify-content: space-between; /* توزيع العناوين على الأطراف */
-    align-items: center; /* التأكد من أنهم في نفس الارتفاع */
-    text-decoration: none; /* إزالة الخط السفلي */
-}
-.popup-group-name {
-    font-size: 17.5px;
-    font-weight: 500;
-    text-align: left;
-}
-.popup-group-subtitle {
-    font-size: 12px;
-    font-weight: 500;
-    color: gray;
-    text-align: right;
-}
-body.no-scroll {
-  overflow: hidden;
-  position: fixed;
-  width: 100%
-  }
-  style 
-  
-    <script>
-
-    document.addEventListener('DOMContentLoaded', function() {
-  const container = document.querySelector('.group-container-1-2');
-  const groups = Array.from(container.children); // تحويل العناصر إلى مصفوفة
-  let currentIndex = 0;
-
-  function scrollGroups() {
-    currentIndex = (currentIndex + 1) % groups.length;
-    const groupWidth = groups[currentIndex].offsetWidth;
-    const containerWidth = container.offsetWidth;
-    const scrollPosition = groups[currentIndex].offsetLeft - (containerWidth / 2) + (groupWidth / 2);
-    container.scrollLeft = scrollPosition;
-  }
-
-  function scrollToFirstGroup() {
-    // حساب الموضع المناسب لتوسيط أول مجموعة عند تحميل الصفحة
-    if (groups.length > 0) {
-      const groupWidth = groups[0].offsetWidth;
-      const containerWidth = container.offsetWidth;
-      const scrollPosition = groups[0].offsetLeft - (containerWidth / 2) + (groupWidth / 2);
-      container.scrollLeft = scrollPosition;
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      max-height: 73%;
+      background-color: white;
+      box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 20px 20px 0 0;
+      overflow-y: auto;
     }
-  }
 
-  // توسيط أول مجموعة عند تحميل الصفحة
-  scrollToFirstGroup();
+    .popup-content {
+      padding: 20px;
+      text-align: center;
+    }
 
-  // بدء التمرير التلقائي بعد فترة قصيرة للتأكد من أن الصفحة تم تحميلها بالكامل
-  setTimeout(function() {
-    setInterval(scrollGroups, 5000);
-  }, 1000); // تأخير قليل للتأكد من تحميل الصفحة بالكامل
-});
-</script>
+    .popup-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #aaa;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .popup-group-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      width: 97%;
+      margin: 0 auto;
+    }
+
+    .popup-group-item {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 14px;
+      border-radius: 13px;
+      color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .popup-group-name {
+      font-size: 17.5px;
+      font-weight: 500;
+    }
+
+    .popup-group-subtitle {
+      font-size: 12px;
+      font-weight: 500;
+      color: gray;
+    }
+
+    body.no-scroll {
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -353,180 +288,104 @@ body.no-scroll {
     </div>
     <i class="fas fa-user account-icon"></i> <!-- أيقونة الحساب -->
   </header>
+
   <div class="container">
-    <div class="title">Experts</div>
+    <div class="title">Abonné</div>
     <div class="balance">0</div>
-</div>
+  </div>
+
   <div class="unique-c-1-list">
-    <a class="unique-c-1-item" data-group="Design" href="https://travauxtnwork.blogspot.com/?m=1">
-      <i class="fas fa-tools"></i>
-       <span class="item-title">Travaux</span>
+    <a class="unique-c-1-item" href="https://boutiquestnwork.blogspot.com/?m=1">
+      <i class="fas fa-store"></i>
+      <span class="item-title">Boutiques</span>
     </a>
-    <a class="unique-c-1-item" data-group="Develop.." href="https://restaurantstnwork.blogspot.com/?m=1">
+    <a class="unique-c-1-item" href="https://restaurantstnwork.blogspot.com/?m=1">
       <i class="fas fa-utensils"></i>
-        <span class="item-title">Restaurants</span>
+      <span class="item-title">Restaurants</span>
     </a>
-    <a class="unique-c-1-item" data-group="E-commerce" href="https://boutiquestnwork.blogspot.com/?m=1">
-<i class="fas fa-store"></i>
- <span class="item-title">Boutiques</span>
-       </a>
-      <a class="unique-c-1-item" data-group="Consultation" href="https://reservationtnwork.blogspot.com/?m=1">
-    <i class="fas fa-calendar-alt"></i> 
-      <span class="item-title">Réservation</span>
+    <a class="unique-c-1-item" href="https://travauxtnwork.blogspot.com/?m=1">
+      <i class="fas fa-tools"></i>
+      <span class="item-title">Travaux</span>
     </a>
-    <a class="unique-c-1-item" data-group="Education" href="https://educationtnwork.blogspot.com/?m=1">
-      <i class="fas fa-chalkboard-teacher"></i> 
-        <span class="item-title">Éducation</span>
-    </a>
-    <a class="unique-c-1-item" data-group="Education" href="https://designtnwork.blogspot.com/?m=1">
-      <i class="fas fa-paint-brush"></i> 
-        <span class="item-title">Design</span>
-    </a>
-    <a class="unique-c-1-item" data-group="Rédaction" href="https://developpementtnwork.blogspot.com/?m=1">
-      <i class="fas fa-laptop-code"></i> 
-        <span class="item-title">Développement</span>
+    <a class="unique-c-1-item" href="https://formations-tnwork.blogspot.com/?m=1">
+      <i class="fas fa-chalkboard-teacher"></i>
+      <span class="item-title">Formations</span>
     </a>
   </div>
 
-  <div class="group-container-1-2" id="groupContainer">
-    <div class="group-1-2" style="background-image: url('https://cdn.shopify.com/s/files/1/0717/2390/9335/files/IMG_20240909_223738.jpg?v=1725917891');"></div>
-    <div class="group-1-2" style="background-image: url('https://cdn.shopify.com/s/files/1/0717/2390/9335/files/IMG_20240909_224319.jpg?v=1725918237');"></div>
-    <div class="group-1-2" style="background-image: url('https://cdn.shopify.com/s/files/1/0717/2390/9335/files/IMG_20240909_224138.jpg?v=1725918237');"></div>
-    <div class="group-1-2" style="background-image: url('https://cdn.shopify.com/s/files/1/0717/2390/9335/files/IMG_20240909_224210.jpg?v=1725918237');"></div>
-    <div class="group-1-2" style="background-image: url('https://cdn.shopify.com/s/files/1/0717/2390/9335/files/IMG_20240909_224154.jpg?v=1725918237');"></div>
+  <div class="group-container-1-2">
+    <div class="group-1-2" style="background-image: url('https://cdn.shopify.com/s/files/1/0673/1232/0677/files/store.png?v=1726369838');"></div>
+    <div class="group-1-2" style="background-image: url('https://cdn.shopify.com/s/files/1/0673/1232/0677/files/restaurant.png?v=1726369838');"></div>
+    <div class="group-1-2" style="background-image: url('https://cdn.shopify.com/s/files/1/0673/1232/0677/files/work.png?v=1726369838');"></div>
+    <div class="group-1-2" style="background-image: url('https://cdn.shopify.com/s/files/1/0673/1232/0677/files/formation.png?v=1726369838');"></div>
   </div>
-  <!-- القائمة الثالثة -->
-<div class="third-group-list">
-    <a class="third-group-item" data-popup="electriciens">
-      <img src="https://cdn.shopify.com/s/files/1/0717/2390/9335/files/1.jpg?v=1725782841" alt="Électriciens" />
-      <h4>Électriciens</h4>
-      <p class="third-group-subtitle">+0</p>
+
+  <div class="third-group-list">
+    <a class="third-group-item" href="https://boutiquestnwork.blogspot.com/?m=1">
+      <img src="https://cdn.shopify.com/s/files/1/0673/1232/0677/files/store.png?v=1726369838" alt="Boutique">
+      <h4>Boutiques</h4>
+      <span class="third-group-subtitle">Découvrir</span>
     </a>
-    <a class="third-group-item" data-popup="plombiers">
-      <img src="https://cdn.shopify.com/s/files/1/0717/2390/9335/files/close-up-mechanic-working_23-2148480380.jpg?v=1725787917" alt="Plombiers" />
-      <h4>Plombiers</h4>
-      <p class="third-group-subtitle">+0</p>
+    <a class="third-group-item" href="https://restaurantstnwork.blogspot.com/?m=1">
+      <img src="https://cdn.shopify.com/s/files/1/0673/1232/0677/files/restaurant.png?v=1726369838" alt="Restaurant">
+      <h4>Restaurants</h4>
+      <span class="third-group-subtitle">Explorer</span>
     </a>
-    <a class="third-group-item" data-popup="menuisiers">
-      <img src="https://cdn.shopify.com/s/files/1/0717/2390/9335/files/3.jpg?v=1725782840" alt="Menuisiers" />
-      <h4>Menuisiers</h4>
-      <p class="third-group-subtitle">+0</p>
+    <a class="third-group-item" href="https://travauxtnwork.blogspot.com/?m=1">
+      <img src="https://cdn.shopify.com/s/files/1/0673/1232/0677/files/work.png?v=1726369838" alt="Travaux">
+      <h4>Travaux</h4>
+      <span class="third-group-subtitle">Voir Plus</span>
     </a>
-    <a class="third-group-item" data-popup="Forgerons">
-      <img src="https://cdn.shopify.com/s/files/1/0717/2390/9335/files/4.jpg?v=1725782842" alt="Fourgons" />
-      <h4>Forgerons</h4>
-      <p class="third-group-subtitle">+0</p>
-    </a>
-    <a class="third-group-item" data-popup="maçons">
-      <img src="https://cdn.shopify.com/s/files/1/0717/2390/9335/files/5.jpg?v=1725782840" alt="Maçons" />
-      <h4>Maçons</h4>
-      <p class="third-group-subtitle">+0</p>
-    </a>
-    <a class="third-group-item" data-popup="peintres">
-      <img src="https://cdn.shopify.com/s/files/1/0717/2390/9335/files/6.jpg?v=1725782841" alt="Peintre" />
-      <h4>Peintres</h4>
-      <p class="third-group-subtitle">+0</p>
-    </a>
-    <a class="third-group-item" data-popup="Plâtreries">
-      <img src="https://cdn.shopify.com/s/files/1/0717/2390/9335/files/7.jpg?v=1725782840" alt="Plâtreries" />
-      <h4>Plâtreries</h4>
-      <p class="third-group-subtitle">+0</p>
-    </a>
-    <a class="third-group-item" data-popup="carreleurs">
-      <img src="https://cdn.shopify.com/s/files/1/0717/2390/9335/files/8.jpg?v=1725782841" alt="Carreleurs" />
-      <h4>Carreleurs</h4>
-      <p class="third-group-subtitle">+0</p>
-    </a>
-    <a class="third-group-item" data-popup="aluminum">
-      <img src="https://cdn.shopify.com/s/files/1/0717/2390/9335/files/9.jpg?v=1725782841" alt="Menuisiers aluminum" />
-      <h4>Menuisiers aluminum</h4>
-      <p class="third-group-subtitle">+0</p>
+    <a class="third-group-item" href="https://formations-tnwork.blogspot.com/?m=1">
+      <img src="https://cdn.shopify.com/s/files/1/0673/1232/0677/files/formation.png?v=1726369838" alt="Formations">
+      <h4>Formations</h4>
+      <span class="third-group-subtitle">Détails</span>
     </a>
   </div>
-  <!-- نموذج نافذة منبثقة -->
-<div id="popup-template" class="popup" style="display: none;">
-  <div class="popup-content">
-    <span class="close-btn">×</span> <!-- استبدال &times; بالرمز × -->
-    <h4 class="popup-title"></h4>
-    <div class="popup-group-list">
-      <!-- محتوى نافذة منبثقة -->
+
+  <!-- Popup section -->
+  <div class="popup" id="popup">
+    <span class="close-btn" id="closePopup">&times;</span>
+    <div class="popup-content">
+      <h2 class="popup-title">Options supplémentaires</h2>
+      <div class="popup-group-list">
+        <a class="popup-group-item" href="#">
+          <span class="popup-group-name">Option 1</span>
+          <span class="popup-group-subtitle">Description</span>
+        </a>
+        <a class="popup-group-item" href="#">
+          <span class="popup-group-name">Option 2</span>
+          <span class="popup-group-subtitle">Description</span>
+        </a>
+        <!-- إضافة المزيد من العناصر هنا -->
+      </div>
     </div>
   </div>
-</div>
 
-<script>
-  const popupData = {
-    electriciens: [
-      { name: "Tunis", link: "https://sites.google.com/view/tdm-a/%C3%A9lectricien", subtitle: "+0" },
-      { name: "Ariana", link: "https://example.com/groupe2", subtitle: "+0" },
-      { name: "Manouba", link: "https://example.com/groupe3", subtitle: "+0" },
-      { name: "Ben Arous", link: "https://example.com/groupe4", subtitle: "+0" },
-      { name: "Nabeul", link: "https://example.com/groupe5", subtitle: "+0" },
-      { name: "Zaghouan", link: "https://example.com/groupe6", subtitle: "+0" },
-      { name: "Sousse", link: "https://example.com/groupe7", subtitle: "+0" },
-      { name: "Monastir", link: "https://example.com/groupe8", subtitle: "+0" },
-      { name: "Mahdia", link: "https://example.com/groupe9", subtitle: "+0" },
-      { name: "Bizerte", link: "https://example.com/groupe10", subtitle: "+0" },
-      { name: "Beja", link: "https://example.com/groupe11", subtitle: "+0" },
-      { name: "Le kef", link: "https://example.com/groupe12", subtitle: "+0" },
-      { name: "Jendouba", link: "https://example.com/groupe13", subtitle: "+0" },
-      { name: "Siliana", link: "https://example.com/groupe14", subtitle: "+0" },
-      { name: "Kairouan", link: "https://example.com/groupe15", subtitle: "+0" },
-      { name: "Sfax", link: "https://example.com/groupe16", subtitle: "+0" },
-      { name: "Kasserine", link: "https://example.com/groupe17", subtitle: "+0" },
-      { name: "Sidi Bouzid", link: "https://example.com/groupe18", subtitle: "+0" },
-      { name: "Gafsa", link: "https://example.com/groupe19", subtitle: "+0" },
-      { name: "Tozeur", link: "https://example.com/groupe20", subtitle: "+0" },
-      { name: "Kebili", link: "https://example.com/groupe21", subtitle: "+0" },
-      { name: "Gabès", link: "https://example.com/groupe22", subtitle: "+0" },
-      { name: "Médenine", link: "https://example.com/groupe23", subtitle: "+0" },
-      { name: "Tataouine", link: "https://example.com/groupe24", subtitle: "+0" }
-    ],
-  plombiers: [
-      { "name": "Tunis", "link": "https://example.com/groupe1", "subtitle": "+0" },
-      { "name": "Ariana", "link": "https://example.com/groupe2", "subtitle": "+0" },
-      { "name": "Manouba", "link": "https://example.com/groupe3", "subtitle": "+0" },
-      { "name": "Ben Arous", "link": "https://example.com/groupe4", "subtitle": "+0" },
-      { "name": "Nabeul", "link": "https://example.com/groupe5", "subtitle": "+0" },
-      { "name": "Zaghouan", "link": "https://example.com/groupe6", "subtitle": "+0" },
-      { "name": "Sousse", "link": "https://example.com/groupe7", "subtitle": "+0" },
-      { "name": "Monastir", "link": "https://example.com/groupe8", "subtitle": "+0" },
-      { "name": "Mahdia", "link": "https://example.com/groupe9", "subtitle": "+0" },
-      { "name": "Bizerte", "link": "https://example.com/groupe10", "subtitle": "+0" },
-      { "name": "Beja", "link": "https://example.com/groupe11", "subtitle": "+0" },
-      { "name": "Le kef", "link": "https://example.com/groupe12", "subtitle": "+0" },
-      { "name": "Jendouba", "link": "https://example.com/groupe13", "subtitle": "+0" },
-      { "name": "Siliana", "link": "https://example.com/groupe14", "subtitle": "+0" },
-      { "name": "Kairouan", "link": "https://example.com/groupe15", "subtitle": "+0" },
-      { "name": "Sfax", "link": "https://example.com/groupe16", "subtitle": "+0" },
-      { "name": "Kasserine", "link": "https://example.com/groupe17", "subtitle": "+0" },
-      { "name": "Sidi Bouzid", "link": "https://example.com/groupe18", "subtitle": "+0" },
-      { "name": "Gafsa", "link": "https://example.com/groupe19", "subtitle": "+0" },
-      { "name": "Tozeur", "link": "https://example.com/groupe20", "subtitle": "+0" },
-      { "name": "Kebili", "link": "https://example.com/groupe21", "subtitle": "+0" },
-      { "name": "Gabès", "link": "https://example.com/groupe22", "subtitle": "+0" },
-      { "name": "Médenine", "link": "https://example.com/groupe23", "subtitle": "+0" },
-      { "name": "Tataouine", "link": "https://example.com/groupe24", "subtitle": "+0" }
-    ],
-    menuisiers: [
-      { "name": "Tunis", "link": "https://example.com/groupe1", "subtitle": "+0" },
-      { "name": "Ariana", "link": "https://example.com/groupe2", "subtitle": "+0" },
-      { "name": "Manouba", "link": "https://example.com/groupe3", "subtitle": "+0" },
-      { "name": "Ben Arous", "link": "https://example.com/groupe4", "subtitle": "+0" },
-      { "name": "Nabeul", "link": "https://example.com/groupe5", "subtitle": "+0" },
-      { "name": "Zaghouan", "link": "https://example.com/groupe6", "subtitle": "+0" },
-      { "name": "Sousse", "link": "https://example.com/groupe7", "subtitle": "+0" },
-      { "name": "Monastir", "link": "https://example.com/groupe8", "subtitle": "+0" },
-      { "name": "Mahdia", "link": "https://example.com/groupe9", "subtitle": "+0" },
-      { "name": "Bizerte", "link": "https://example.com/groupe10", "subtitle": "+0" },
-      { "name": "Beja", "link": "https://example.com/groupe11", "subtitle": "+0" },
-      { "name": "Le kef", "link": "https://example.com/groupe12", "subtitle": "+0" },
-      { "name": "Jendouba", "link": "https://example.com/groupe13", "subtitle": "+0" },
-      { "name": "Siliana", "link": "https://example.com/groupe14", "subtitle": "+0" },
-      { "name": "Kairouan", "link": "https://example.com/groupe15", "subtitle": "+0" },
-      { "name": "Sfax", "link": "https://example.com/groupe16", "subtitle": "+0" },
-      { "name": "Kasserine", "link": "https://example.com/groupe17", "subtitle": "+0" },
-      { "name": "Sidi Bouzid", "link": "https://example.com/groupe18", "subtitle": "+0" },
-      { "name": "Gafsa", "link": "https://example.com/groupe19", "subtitle": "+0" },
-      { "name": "Tozeur", "link": "https://example.com/groupe20", "subtitle": "+0" },
-      { "name": "Kebili",
+  <!-- إضافة جافاسكريبت لإدارة النافذة المنبثقة -->
+  <script>
+    const popup = document.getElementById('popup');
+    const closePopup = document.getElementById('closePopup');
+
+    // عرض النافذة المنبثقة عند الضغط على عنصر معين
+    function openPopup() {
+      popup.style.display = 'block';
+      document.body.classList.add('no-scroll');
+    }
+
+    // إخفاء النافذة المنبثقة عند الضغط على زر الإغلاق
+    closePopup.addEventListener('click', function() {
+      popup.style.display = 'none';
+      document.body.classList.remove('no-scroll');
+    });
+
+    // إغلاق النافذة المنبثقة عند الضغط خارجها
+    window.addEventListener('click', function(event) {
+      if (event.target === popup) {
+        popup.style.display = 'none';
+        document.body.classList.remove('no-scroll');
+      }
+    });
+  </script>
+</body>
+</html>
