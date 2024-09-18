@@ -1,7 +1,8 @@
 body, html {
     margin: 0;
     padding: 0;
-    width: 100% ; /* جعل الجسم يأخذ عرض الصفحة بالكامل */
+    width: 100% ; /* جعل الجسم يأخذ عرضالصفحة بالكامل */
+    font-family: 'Amazon Ember', Arial, sans-serif;
 }
 
 .blue-background-container {
@@ -303,7 +304,6 @@ body.no-scroll {
 }
 
 .a-4-group-item {
-    font-family: 'Amazon Ember', Arial, sans-serif;
   display: flex;
   align-items: center;
   text-decoration: none;
