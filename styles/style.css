@@ -1,0 +1,123 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* جعل الجسم يأخذ عرض الصفحة بالكامل */
+}
+
+.blue-background-container {
+    background-color: #1D73BE;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    max-width: 1800px; /* تحديد الحد الأقصى للعرض، يمكنك تعديل القيمة */
+    margin: 0 auto; /* مركزية المحتوى إذا كان هناك عرض ثابت */
+}
+
+/* تنسيقات خانة البحث */
+.unique-search-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:4px;
+}
+
+.unique-search-input-container {
+    position: relative;
+    display: flex;
+}
+
+.unique-search-input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14.2px;
+    width: 384px;
+    margin-top: 30px;
+}
+
+.unique-search-button {
+    padding: 9px;
+    background-color: #1D73BE;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: -53px;
+    width: 53px;
+    margin-top: 30px;
+}
+
+.unique-search-button svg {
+    width: 30px;
+    height: 24px;
+    fill: #fff;
+}
+
+.unique-search-button:hover {
+    background-color: #ffaa00;
+}
+
+/* تنسيقات قائمة المجموعات */
+.unique-c-1-list {
+    display: flex;
+    overflow-x: auto;
+    padding: 5px 0px 8px 0px;
+    font-family: 'Amazon Ember', Arial, sans-serif;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+.unique-c-1-list::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.unique-c-1-item {
+    flex-shrink: 0;
+    margin-right: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: -4px;
+}
+
+.unique-active {
+    font-weight: bold;
+    color: #ffffff;
+    position: relative;
+}
+
+.unique-active::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 9px 9px 9px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.search-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin: 13px 25px -20px 10px;
+}
+
+.icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+}
