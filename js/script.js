@@ -40,28 +40,89 @@ setInterval(scrollGroups, 5000);
 const collectionDetails1_3 = [
   {
     title: 'Designers',
-    content: `<div class="group-list-inner-1-3">
-                <div class="group-item-inner-1-3" onclick="window.location.href='/pages/Ldesigner'">
-                  Logo designers <span class="subtitle">0 skills</span>
-                </div>
-                <div class="group-item-inner-1-3" onclick="window.location.href='/pages/Ldesigner'">
-                  Web designers <span class="subtitle">5 skills</span>
-                </div>
-                <div class="group-item-inner-1-3" onclick="window.location.href='/pages/Ldesigner'">
-                  Graphic designers <span class="subtitle">3 skills</span>
-                </div>
-              </div>`
-  },
-  {
-    title: '0 Skills',
-    content: `<div class="group-list-inner-1-3">
-                <div class="group-item-inner-1-3" onclick="window.location.href='/pages/Lskills'">
-                  Basic skills <span class="subtitle">0 skills</span>
-                </div>
-                <div class="group-item-inner-1-3" onclick="window.location.href='/pages/Lskills'">
-                  Advanced skills <span class="subtitle">0 skills</span>
-                </div>
-              </div>`
+    content: '<div class="group-list-inner-1-3">' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Ldesigner\'">' +
+             'Logo designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/designers-page.html\'">' +
+             'Brand Identity Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Business Card Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Brochure & Flyer Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Poster Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Book Cover Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Packaging Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Print Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Advertisement Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Illustration designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Icon Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Web Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'UI Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'UX Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Game Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Motion Graphics Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Promotional Video Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             '3D Animation Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Visual Effects Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Presentation Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             '3D Character Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             '3D Modeling<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             '3D Product Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             '3D Environment Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Event Branding Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Event Invitation Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
+             'Banner & Billboard Designers<span class="subtitle">0 skills</span>' +
+             '</div>' +
+             '</div>'
   }
 ];
 
@@ -70,23 +131,17 @@ function openModal1_3(index) {
   const modalTitle = document.getElementById('modalTitle1_3');
   const modalContent = document.getElementById('modalContent1_3');
 
-  modalTitle.textContent = collectionDetails1_3[index].title;
-  modalContent.innerHTML = collectionDetails1_3[index].content;
-
-  modal.style.display = 'block';
-  document.body.classList.add('no-scroll');
+  // تحقق من أن الفهرس صحيح
+  if (collectionDetails1_3[index]) {
+    modalTitle.textContent = collectionDetails1_3[index].title;
+    modalContent.innerHTML = collectionDetails1_3[index].content; // تحميل المحتوى الجديد
+    modal.style.display = 'block';
+    document.body.classList.add('no-scroll'); // منع التمرير في الصفحة الرئيسية
+  }
 }
 
 function closeModal1_3() {
   const modal = document.getElementById('modal1_3');
   modal.style.display = 'none';
-  document.body.classList.remove('no-scroll');
-}
-
-// Close modal when clicking outside of modal content
-window.onclick = function(event) {
-  const modal = document.getElementById('modal1_3');
-  if (event.target === modal) {
-    closeModal1_3();
-  }
+  document.body.classList.remove('no-scroll'); // السماح بالتمرير في الصفحة الرئيسية
 }
