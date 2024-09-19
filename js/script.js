@@ -18,7 +18,7 @@
           activeElement.classList.add('unique-active');
         }
       } else {
-        const defaultActive = document.querySelector(`[data-group="Design"]`);
+        const defaultActive = document.querySelector(`[data-group="E-commerce"]`);
         if (defaultActive) {
           defaultActive.classList.add('unique-active');
         }
