@@ -42,76 +42,76 @@ const collectionDetails1_3 = [
     title: 'Boutiques locaux',
     content: '<div class="group-list-inner-1-3">' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Ldesigner\'">' +
-             'Tunis<span class="subtitle">0 skills</span>' +
+             'Tunis<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/designers-page.html\'">' +
-             'Ariana<span class="subtitle">0 skills</span>' +
+             'Ariana<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Manouba<span class="subtitle">0 skills</span>' +
+             'Manouba<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Ben Arous<span class="subtitle">0 skills</span>' +
+             'Ben Arous<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Nabeul<span class="subtitle">0 skills</span>' +
+             'Nabeul<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Zaghouan<span class="subtitle">0 skills</span>' +
+             'Zaghouan<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Sousse<span class="subtitle">0 skills</span>' +
+             'Sousse<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Monastir<span class="subtitle">0 skills</span>' +
+             'Monastir<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Mahdia<span class="subtitle">0 skills</span>' +
+             'Mahdia<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Bizerte<span class="subtitle">0 skills</span>' +
+             'Bizerte<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Beja<span class="subtitle">0 skills</span>' +
+             'Beja<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Le kef<span class="subtitle">0 skills</span>' +
+             'Le kef<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Jendouba<span class="subtitle">0 skills</span>' +
+             'Jendouba<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Siliana<span class="subtitle">0 skills</span>' +
+             'Siliana<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Kairouan<span class="subtitle">0 skills</span>' +
+             'Kairouan<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Sfax<span class="subtitle">0 skills</span>' +
+             'Sfax<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Kasserine<span class="subtitle">0 skills</span>' +
+             'Kasserine<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Sidi Bouzid<span class="subtitle">0 skills</span>' +
+             'Sidi Bouzid<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Gafsa<span class="subtitle">0 skills</span>' +
+             'Gafsa<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Tozeur<span class="subtitle">0 skills</span>' +
+             'Tozeur<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Kebili<span class="subtitle">0 skills</span>' +
+             'Kebili<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Gabès<span class="subtitle">0 skills</span>' +
+             'Gabès<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Médenine<span class="subtitle">0 skills</span>' +
+             'Médenine<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Tataouine<span class="subtitle">0 skills</span>' +
+             'Tataouine<span class="subtitle">0 Boutiques</span>' +
              '</div>' +
              '</div>'
   }
