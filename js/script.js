@@ -18,7 +18,7 @@
           activeElement.classList.add('unique-active');
         }
       } else {
-        const defaultActive = document.querySelector(`[data-group="E-commerce"]`);
+        const defaultActive = document.querySelector(`[data-group="Design"]`);
         if (defaultActive) {
           defaultActive.classList.add('unique-active');
         }
@@ -39,88 +39,79 @@ function scrollGroups() {
 setInterval(scrollGroups, 5000);
 const collectionDetails1_3 = [
   {
-    title: 'Designers',
+    title: 'Boutiques locaux',
     content: '<div class="group-list-inner-1-3">' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Ldesigner\'">' +
-             'Logo designers<span class="subtitle">0 skills</span>' +
+             'Tunis<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/designers-page.html\'">' +
-             'Brand Identity Designers<span class="subtitle">0 skills</span>' +
+             'Ariana<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Business Card Designers<span class="subtitle">0 skills</span>' +
+             'Manouba<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Brochure & Flyer Designers<span class="subtitle">0 skills</span>' +
+             'Ben Arous<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Poster Designers<span class="subtitle">0 skills</span>' +
+             'Nabeul<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Book Cover Designers<span class="subtitle">0 skills</span>' +
+             'Zaghouan<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Packaging Designers<span class="subtitle">0 skills</span>' +
+             'Sousse<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Print Designers<span class="subtitle">0 skills</span>' +
+             'Monastir<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Advertisement Designers<span class="subtitle">0 skills</span>' +
+             'Mahdia<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Illustration designers<span class="subtitle">0 skills</span>' +
+             'Bizerte<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Icon Designers<span class="subtitle">0 skills</span>' +
+             'Beja<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Web Designers<span class="subtitle">0 skills</span>' +
+             'Le kef<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'UI Designers<span class="subtitle">0 skills</span>' +
+             'Jendouba<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'UX Designers<span class="subtitle">0 skills</span>' +
+             'Siliana<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Game Designers<span class="subtitle">0 skills</span>' +
+             'Kairouan<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Motion Graphics Designers<span class="subtitle">0 skills</span>' +
+             'Sfax<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Promotional Video Designers<span class="subtitle">0 skills</span>' +
+             'Kasserine<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             '3D Animation Designers<span class="subtitle">0 skills</span>' +
+             'Sidi Bouzid<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Visual Effects Designers<span class="subtitle">0 skills</span>' +
+             'Gafsa<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Presentation Designers<span class="subtitle">0 skills</span>' +
+             'Tozeur<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             '3D Character Designers<span class="subtitle">0 skills</span>' +
+             'Kebili<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             '3D Modeling<span class="subtitle">0 skills</span>' +
+             'Gabès<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             '3D Product Designers<span class="subtitle">0 skills</span>' +
+             'Médenine<span class="subtitle">0 skills</span>' +
              '</div>' +
              '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             '3D Environment Designers<span class="subtitle">0 skills</span>' +
-             '</div>' +
-             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Event Branding Designers<span class="subtitle">0 skills</span>' +
-             '</div>' +
-             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Event Invitation Designers<span class="subtitle">0 skills</span>' +
-             '</div>' +
-             '<div class="group-item-inner-1-3" onclick="window.location.href=\'/pages/Development\'">' +
-             'Banner & Billboard Designers<span class="subtitle">0 skills</span>' +
+             'Tataouine<span class="subtitle">0 skills</span>' +
              '</div>' +
              '</div>'
   }
