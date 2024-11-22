@@ -6,7 +6,7 @@ body, html {
 }
 
 .blue-background-container {
-    background: linear-gradient(to bottom, rgb(17, 188, 250), rgb(59, 139, 229));
+    background: linear-gradient(120deg, #0A5DB5, #0B8FDB, #1A73E8, #12BBE0, #33D7F7);
     padding: 0px;
     display: flex;
     flex-direction: column;
