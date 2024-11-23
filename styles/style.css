@@ -65,7 +65,7 @@ body, html {
 .unique-c-1-list {
     display: flex;
     overflow-x: auto;
-    padding: 4.5px 0px 10.5px 0px;
+    padding: 2.5px 0px 8.5px 0px;
     font-family: 'Amazon Ember', Arial, sans-serif;
     -ms-overflow-style: none; /* Internet Explorer 10+ */
     scrollbar-width: none; /* Firefox */
