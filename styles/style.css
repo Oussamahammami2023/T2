@@ -5,7 +5,9 @@ body, html {
     font-family: 'Amazon Ember', Arial, sans-serif;
 }
 main {
-  padding-bottom: 56px; /* مساحة لتجنب تغطية شريط التنقل */
+    min-height: calc(100vh - 56px); /* التأكد من أن المحتوى لا يتجاوز شريط التنقل */
+    padding-bottom: 56px; /* مساحة أسفل المحتوى لتجنب تغطيته بشريط التنقل */
+    box-sizing: border-box; /* التأكد من أن الحشوات لا تتجاوز أبعاد العنصر */
 }
 .blue-background-container {
     background: linear-gradient(120deg, #0A5DB5, #0B8FDB, #1A73E8, #12BBE0, #33D7F7);
