@@ -4,7 +4,9 @@ body, html {
     width: 100% ; /* جعل الجسم يأخذ عرضالصفحة بالكامل */
     font-family: 'Amazon Ember', Arial, sans-serif;
 }
-
+main {
+  padding-bottom: 56px; /* مساحة لتجنب تغطية شريط التنقل */
+}
 .blue-background-container {
     background: linear-gradient(120deg, #0A5DB5, #0B8FDB, #1A73E8, #12BBE0, #33D7F7);
     padding: 0px;
