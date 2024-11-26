@@ -164,3 +164,9 @@ function openFullscreen() {
 document.addEventListener('DOMContentLoaded', () => {
     openFullscreen();
 });
+window.addEventListener('load', () => {
+  // التأكد من أن الصفحة يتم تحميلها بالكامل أولاً
+  setTimeout(() => {
+    window.scrollTo(0, 1); // إخفاء شريط التمرير في المتصفح
+  }, 0);
+});
