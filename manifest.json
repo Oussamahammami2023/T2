@@ -3,7 +3,7 @@
   "short_name": "Tnwork",
   "start_url": "index.html",
   "display": "standalone", 
-  "background_color": "#000",
+  "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "icons": [
     {
