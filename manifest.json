@@ -3,8 +3,8 @@
   "short_name": "Tnwork",
   "start_url": "index.html",
   "display": "fullscreen", 
-  "background_color": "#ffffff",
-  "theme_color": "#000",
+  "background_color": "#000",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "image/IMG_20241105_005049.jpg",
