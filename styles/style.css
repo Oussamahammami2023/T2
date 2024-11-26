@@ -1,16 +1,8 @@
 body, html {
     margin: 0;
     padding: 0;
-    width: 100%; /* جعل الجسم يأخذ عرض الصفحة بالكامل */
-    height: 50%; /* التأكد من أن الجسم يغطي ارتفاع الشاشة بالكامل */
-    font-family: 'Amazon Ember', Arial, sans-serif; /* الخط المستخدم */
-    overflow-x: hidden; /* منع التمرير الأفقي في حال كان المحتوى كبيرًا */
-}
-
-main {
-    min-height: calc(100vh - 56px); /* التأكد من أن المحتوى لا يتجاوز شريط التنقل */
-    padding-bottom: 56px; /* مساحة أسفل المحتوى لتجنب تغطيته بشريط التنقل */
-    box-sizing: border-box; /* التأكد من أن الحشوات لا تتجاوز أبعاد العنصر */
+    width: 100% ; /* جعل الجسم يأخذ عرضالصفحة بالكامل */
+    font-family: 'Amazon Ember', Arial, sans-serif;
 }
 .blue-background-container {
     background: linear-gradient(120deg, #0A5DB5, #0B8FDB, #1A73E8, #12BBE0, #33D7F7);
