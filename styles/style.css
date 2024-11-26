@@ -1,9 +1,12 @@
 body, html {
     margin: 0;
     padding: 0;
-    width: 100% ; /* جعل الجسم يأخذ عرضالصفحة بالكامل */
-    font-family: 'Amazon Ember', Arial, sans-serif;
+    width: 100%; /* جعل الجسم يأخذ عرض الصفحة بالكامل */
+    height: 100%; /* التأكد من أن الجسم يغطي ارتفاع الشاشة بالكامل */
+    font-family: 'Amazon Ember', Arial, sans-serif; /* الخط المستخدم */
+    overflow-x: hidden; /* منع التمرير الأفقي في حال كان المحتوى كبيرًا */
 }
+
 main {
     min-height: calc(100vh - 56px); /* التأكد من أن المحتوى لا يتجاوز شريط التنقل */
     padding-bottom: 56px; /* مساحة أسفل المحتوى لتجنب تغطيته بشريط التنقل */
