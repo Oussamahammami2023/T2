@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pages List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .page-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .page-link {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .page-link:hover {
+      background-color: #f0c14b;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Available Pages</h1>
+  <div id="pages-container" class="page-list">Loading pages...</div>
+
+  <script>
+    // رابط ملف CSV في مستودع GitHub
+    const csvUrl = '../csv/pro.csv';
+
+    // تحميل محتويات ملف CSV
+    fetch(csvUrl)
+      .then(response => response.text())
+      .then(data => {
+        // تقسيم الملف إلى أسطر
+        const rows = data.split('\n').slice(1); // تجاهل الصف الأول (العناوين)
+
+        // استخراج المسارات من عمود "Page path"
+        const pages = rows.map(row => {
+          const columns = row.split(',');
+          return columns[4]; // افترض أن "Page path" في العمود الخامس
+        }).filter(path => path); // إزالة القيم الفارغة
+
+        // إنشاء الروابط
+        const container = document.getElementById('pages-container');
+        container.innerHTML = pages.map(pagePath => `
+          <a href="${pagePath}" target="_blank" class="page-link">${pagePath}</a>
+        `).join('');
+      })
+      .catch(error => {
+        console.error('Error loading CSV:', error);
+        document.getElementById('pages-container').textContent = 'Failed to load pages.';
+      });
+  </script>
+</body>
+</html>
