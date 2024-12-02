@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #searchBox {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .product img {
+            max-width: 100px;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Products</h1>
+    <input type="text" id="searchBox" placeholder="Enter product name...">
+    <div id="results"></div>
+
+    <script>
+        // تحميل البيانات من ملف CSV
+        Papa.parse('products.csv', {
+            download: true,
+            header: true,
+            complete: function(results) {
+                const data = results.data;
+                const searchBox = document.getElementById('searchBox');
+                const resultsDiv = document.getElementById('results');
+
+                // استماع لإدخال البحث
+                searchBox.addEventListener('input', function() {
+                    const query = searchBox.value.toLowerCase();
+                    const filtered = data.filter(product => 
+                        product['Product Name'].toLowerCase().includes(query)
+                    );
+
+                    // عرض النتائج
+                    resultsDiv.innerHTML = filtered.map(product => `
+                        <div class="product">
+                            <h2>${product['Product Name']}</h2>
+                            <img src="${product['Image URL']}" alt="${product['Product Name']}">
+                            <p><strong>Price:</strong> ${product['Price']}</p>
+                            <p><strong>Description:</strong> ${product['Description']}</p>
+                        </div>
+                    `).join('');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
