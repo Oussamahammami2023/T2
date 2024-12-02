@@ -6,47 +6,29 @@
   <title>Product List</title>
   <style>
     #product-container {
-      display: flex; 
-      flex-wrap: wrap; 
-      justify-content: space-between;
+      display: flex; flex-wrap: wrap; justify-content: space-between;
     }
     .product {
-      border: 0.5px solid #ddd; 
-      margin: 0 -5px 8px; 
-      width: calc(50% - 2px); 
-      height: 400px;
-      text-align: center; 
-      border-radius: 2px; 
-      display: flex; 
-      flex-direction: column;
+      border: 0.5px solid #ddd; margin: 0 -5px 8px; width: calc(50% - 2px); height: 400px;
+      text-align: center; border-radius: 2px; display: flex; flex-direction: column;
       justify-content: space-between;
     }
     .product img {
-      max-width: 100%; 
-      height: 500px; 
-      object-fit: contain; 
-      border-radius: 2px;
+      max-width: 100%; height: 500px; object-fit: contain; border-radius: 2px;
     }
     .product h2, .product p {
-      margin: 10px 0; 
-      font-size: 14px;
+      margin: 10px 0; font-size: 14px;
     }
-    .product button {
-      padding: 10px 20px; 
-      color: white; 
-      background-color: #f0c14b; 
-      text-decoration: none;
-      border-radius: 5px; 
-      font-weight: bold;
+    .product a {
+      padding: 10px 20px; color: white; background-color: #f0c14b; text-decoration: none;
+      border-radius: 5px; font-weight: bold;
     }
-    .product button:hover { 
-      background-color: #e3b22c; 
+    .product a:hover { background-color: #e3b22c; 
     }
   </style>
 </head>
 <body>
   <div id="product-container">Loading products...</div>
-
   <script>
     // رابط ملف CSV في مستودع GitHub Pages
     const csvUrl = '../csv/pro.csv';
@@ -65,16 +47,10 @@
             <h2>${p.name}</h2>
             <p>${p.description}</p>
             <p><strong>Price: </strong>${p.price}</p>
-            <button onclick="navigateTo('${p.pagePath}')">View Details</button>
+            <a href="${p.pagePath}" target="_blank">View Details</a>
           </div>
         `).join('');
       });
-
-    // وظيفة لتوجيه المستخدم إلى الصفحة المحددة داخل التطبيق
-    function navigateTo(pagePath) {
-      // التأكد من أن المسار هو نسبي داخل التطبيق
-      window.location.replace(pagePath);  // استخدام replace لضمان عدم ظهور شريط المتصفح
-    }
   </script>
 </body>
 </html>
