@@ -70,10 +70,10 @@
         `).join('');
       });
 
-    // وظيفة لتوجيه المستخدم إلى الصفحة المحددة
+    // وظيفة لتوجيه المستخدم إلى الصفحة المحددة داخل التطبيق
     function navigateTo(pagePath) {
       // التأكد من أن المسار هو نسبي داخل التطبيق
-      window.location.href = pagePath;
+      window.location.replace(pagePath);  // استخدام replace لضمان عدم ظهور شريط المتصفح
     }
   </script>
 </body>
