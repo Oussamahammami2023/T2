@@ -30,12 +30,15 @@
 <body>
   <div id="product-container">Loading products...</div>
   <script>
-    fetch('../Csv/Feuille de calcul sans titre - Feuille 1 (3).csv')
+    // رابط ملف CSV في مستودع GitHub Pages
+    const csvUrl = '../Csv/Feuille de calcul sans titre - Feuille 1 (3).csv';
+
+    fetch(csvUrl)
       .then(res => res.text())
       .then(data => {
         const products = data.split('\n').slice(1).map(row => {
-          const [name, price, description, imageUrl, purchaseLink] = row.split(',');
-          return { name, price, description, imageUrl, purchaseLink };
+          const [name, price, description, imageUrl, pagePath] = row.split(',');
+          return { name, price, description, imageUrl, pagePath };
         });
         const container = document.getElementById('product-container');
         container.innerHTML = products.map(p => `
@@ -44,7 +47,7 @@
             <h2>${p.name}</h2>
             <p>${p.description}</p>
             <p><strong>Price: </strong>${p.price}</p>
-            <a href="${p.Page path}" target="_blank">Buy Now</a>
+            <a href="${p.pagePath}" target="_blank">View Details</a>
           </div>
         `).join('');
       });
