@@ -30,7 +30,7 @@
 <body>
   <div id="product-container">Loading products...</div>
   <script>
-    fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vS7Pnh_Z9Ddm0IRd9bDrCguj7bGFMykL4qcVkOBiWgVp9XnWL3hzJ5cITVGUUavOMGMWHQ-VR_f7lS0/pub?output=csv')
+    fetch('../Csv/Feuille de calcul sans titre - Feuille 1 (3).csv')
       .then(res => res.text())
       .then(data => {
         const products = data.split('\n').slice(1).map(row => {
