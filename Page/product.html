@@ -17,15 +17,27 @@
     .product img {
       max-width: 100%; height: 500px; object-fit: contain; border-radius: 2px;
     }
-    .product h2, .product p {
-      margin: 10px 0; font-size: 20px; text-align: left;
+    .product h2 { 
+      margin: 10px 0; 
+      font-size: 24px; /* حجم الخط لعنوان المنتج */
+      text-align: left;
+    }
+    .product .description {
+      margin: 10px 0; 
+      font-size: 16px; /* حجم الخط لوصف المنتج */
+      text-align: left;
+    }
+    .product .price {
+      margin: 10px 0; 
+      font-size: 18px; /* حجم الخط لسعر المنتج */
+      text-align: left; 
+      color: green; /* لون مخصص للسعر */
     }
     .product a {
       padding: 8px 15px; color: white; background-color: #f0c14b; text-decoration: none;
       border-radius: 20px; font-weight: bold;
     }
-    .product a:hover { background-color: #e3b22c; 
-    }
+    .product a:hover { background-color: #e3b22c; }
   </style>
 </head>
 <body>  
@@ -46,8 +58,8 @@
           <div class="product">
             <img src="${p.imageUrl}" alt="${p.name}">
             <h2>${p.name}</h2>
-            <p>${p.description}</p>
-            <p>${p.price}</p>
+            <p class="description">${p.description}</p>
+            <p class="price">${p.price}</p>
             <a href="${p.pagePath}" target="_self">View Details</a>
           </div>
         `).join('');
