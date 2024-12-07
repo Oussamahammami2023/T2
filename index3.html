@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit CSV File Content</title>
+</head>
+<body>
+  <h1>Edit CSV File Content</h1>
+
+  <textarea id="csvContent" rows="20" cols="100"></textarea><br>
+  <button onclick="saveCSV()">Save Changes</button>
+
+  <script>
+    const owner = 'CME2024'; // Your GitHub username
+    const repo = ' Oussamahammami2023'; // Your repository name
+    const filePath = 'https://github.com/Oussamahammami2023/T2/blob/410c15275fd0a88fa2d586cd08a1dc7ff2beb70e/csv/pro.csv'; // The full path to the CSV file in your repository
+    const token = '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'; // Your personal access token
+
+    const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
+
+    // Function to load the CSV content
+    async function loadCSV() {
+      try {
+        const response = await fetch(apiUrl, {
+          headers: {
+            'Authorization': `token ${token}`
+          }
+        });
+        const data = await response.json();
+        
+        if (data.content) {
+          const content = atob(data.content); // Decode base64 content
+          document.getElementById('csvContent').value = content; // Display content in the textarea
+        } else {
+          alert('Content not found');
+        }
+      } catch (error) {
+        console.error(error);
+        alert('An error occurred while loading the file');
+      }
+    }
+
+    // Function to save the edited CSV content
+    async function saveCSV() {
+      const updatedContent = document.getElementById('csvContent').value;
+      
+      // Fetch the current SHA of the file
+      const fileData = await fetch(apiUrl, {
+        headers: {
+          'Authorization': `token ${token}`
+        }
+      }).then(response => response.json());
+      
+      const sha = fileData.sha; // Get the current SHA of the file for updating
+
+      try {
+        const response = await fetch(apiUrl, {
+          method: 'PUT',
+          headers: {
+            'Authorization': `token ${token}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            message: 'Update CSV file content',
+            content: btoa(updatedContent), // Encode the content to base64
+            sha: sha // Add the current SHA for the file
+          })
+        });
+
+        const result = await response.json();
+        console.log(result);
+        alert('Changes saved successfully');
+      } catch (error) {
+        console.error(error);
+        alert('An error occurred while saving the changes');
+      }
+    }
+
+    // Load the file content when the page loads
+    loadCSV();
+  </script>
+</body>
+</html>
