@@ -13,7 +13,7 @@
     }
     .header {
         display: flex;
-        align-items: center;
+        align-items: center ;
         padding: 10px;
         background-color: #fff;
         position: fixed;
@@ -26,25 +26,30 @@
     .header input {
         flex: 1;
         padding: 8px;
-        margin-left: 10px;
+        margin-left: 0px;
         border: 1px solid #ddd;
         border-radius: 20px;
         background-color: #f5f5f5;
     }
-    .nav {
-        display: flex;
-        overflow-x: auto;
-        white-space: nowrap;
-        background-color: #fff;
-        border-bottom: 1px solid #ddd;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        padding: 0px 0;
-        position: fixed;
-        top: 50px; /* مباشرة أسفل الهيدر */
-        left: 0;
-        right: 0;
-        z-index: 9;
-    }
+   .nav {
+    display: flex;
+    overflow-x: auto; /* السماح بالتمرير الأفقي */
+    white-space: nowrap;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0px 0;
+    position: fixed;
+    top: 50px; /* مباشرة أسفل الهيدر */
+    left: 0;
+    right: 0;
+    z-index: 9;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.nav::-webkit-scrollbar {
+    display: none;
+}
     .nav div {
         font-size: 14px;
         color: #555;
@@ -72,14 +77,19 @@
     bottom: 0;
     left: 0;
 }
-    .icons {
-        display: flex;
-        overflow-x: auto;
-        white-space: nowrap;
-        background-color: #fff;
-        padding: 10px;
-        margin-top: 100px; /* تعويض ارتفاع الهيدر والتنقل */
-    }
+  .icons {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 100px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.icons::-webkit-scrollbar {
+    display: none;
+}
     .icons div {
         text-align: center;
         margin-right: 15px;
@@ -139,7 +149,6 @@ body {
 <body>
     <!-- Header -->
     <div class="header">
-        <img src="profile.png" alt="Profile" width="40" height="40">
         <input type="text" placeholder="Recherchez ou entrez une URL">
     </div>
 
