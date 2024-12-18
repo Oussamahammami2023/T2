@@ -93,6 +93,10 @@
   .sidebar.active {
     left: 0;
   }
+  .nav a {
+    text-decoration: none; /* إزالة الخط السفلي من الروابط */
+    color: inherit; /* استخدام نفس لون النص من العنصر الأب */
+}
    .nav {
     display: flex;
     overflow-x: auto; /* السماح بالتمرير الأفقي */
@@ -139,39 +143,49 @@
     bottom: 0;
     left: 0;
 }
-  .icons {
+.icons {
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
     background-color: #fff;
-    padding: 10px;
+    padding: 5px;
     margin-top: 100px;
+    margin-bottom: -22px;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
+
 .icons::-webkit-scrollbar {
     display: none;
 }
-    .icons div {
-        text-align: center;
-        margin-right: 15px;
-    }
-    .icons img {
-        width: 40px;
-        height: 40px;
-        border-radius: 10px;
-        display: block;
-        margin: 0 auto;
-    }
-    .icons p {
-        margin-top: 5px;
-        font-size: 12px;
-        color: #555;
-    }
-     .group-list {
+
+.icons div {
+    text-align: center;
+    margin-right: 18px;
+}
+
+.icons img {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.icons p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #555;
+}
+
+.icons a {
+    text-decoration: none; /* إزالة الخط تحت النص */
+    color: inherit; /* يضمن استخدام لون النص الطبيعي */
+}
+  .group-list {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 25px;
             padding: 20px;
             flex-wrap: wrap;
         }
@@ -200,15 +214,17 @@
     z-index: 10;
 }
 .footer div {
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .footer-icon {
-    font-size: 23px; /* حجم الأيقونة */
-    color: #8C3CFD; /* لون الأيقونة */
+    font-size: 22px; /* حجم الأيقونة */
+    background-image: linear-gradient(90deg, #6ec1ff, #ab47bc); /* التدرج اللوني */
+    -webkit-background-clip: text; /* تطبيق التدرج على النص */
+    color: transparent; /* جعل النص شفافًا بحيث يظهر التدرج */
     margin-bottom: 5px; /* مسافة بين الأيقونة والنص */
 }
 body {
@@ -222,70 +238,92 @@ body {
     <div class="menu-icon" onclick="toggleSidebar(event)"></div>
     <input type="text" placeholder="Rechercher dans les services de Majaz Al Bab">
   </div>
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <ul>
+    <li><a href="/T2-main/boutiques.html">Boutiques</a></li>
+    <li><a href="/T2-main/restaurants.html">Restaurants</a></li>
+    <li><a href="/T2-main/artisans.html">Artisans</a></li>
+    <li><a href="/T2-main/medecins.html">Médecins</a></li>
+    <li><a href="/T2-main/avocats.html">Avocats</a></li>
+    <li><a href="/T2-main/architectes.html">Architectes</a></li>
+    <li><a href="/T2-main/comptables.html">Comptable</a></li>
+    <li><a href="/T2-main/formation.html">Centre de formation</a></li>
+  </ul>
+</div>
 
-  <div class="sidebar" id="sidebar">
-    <ul>
-      <li><a href="#link1">E-commerce</a></li>
-      <li><a href="#link2">Artisans</a></li>
-      <li><a href="#link3">Médecins</a></li>
-      <li><a href="#link4">Avocats</a></li>
-      <li><a href="#link5">Architectes</a></li>
-    </ul>
-  </div>
-
-    <!-- Navigation -->
-    <div class="nav">
-        <div class="active">E-commerce</div>
-         <div>Artisans</div>
-        <div>Médecins</div>
-        <div>Avocat</div>
-        <div>Architecte</div>
-        <div>Comptable</div>
-        <div>Centre de formation</div>
-    </div>
+<!-- Navigation -->
+<div class="nav">
+<div class="active"><a href="/T2-main/boutiques.html">Boutiques</a></div>
+ <div><a href="/T2-main/index3.html">Restaurants</a></div>
+  <div><a href="/T2-main/artisans.html">Travaux</a></div>
+  <div><a href="/T2-main/medecins.html">Médecins</a></div>
+  <div><a href="/T2-main/avocats.html">Avocat</a></div>
+  <div><a href="/T2-main/architectes.html">Architecte</a></div>
+  <div><a href="/T2-main/comptables.html">Comptable</a></div>
+  <div><a href="/T2-main/formation.html">Centre de formation</a></div>
+</div>
 
     <!-- Icons with Titles -->
-    <div class="icons">
-        <div>
-            <img src="/T2-main/image/restaurants/IMG_20241105_004958.jpg" alt="YouTube">
-            <p>Fast food</p>
-        </div>
-        <div>
+<div class="icons">
+    <div>
+        <a href="/T2-main/index3.html">
             <img src="/T2-main/image/images (12) (17).jpeg" alt="VidGame">
             <p>Vêtements</p>
-        </div>
-        <div>
-            <img src="/T2-main/image/IMG_20241206_051919.jpg" alt="Facebook">
-            <p>Electronic</p>
-        </div>
-        <div>
-            <img src="/T2-main/image/IMG_20241206_051940.jpg" alt="Instagram">
-            <p>Parfumerie</p>
-        </div>
-        <div>
-            <img src="/T2-main/image/IMG_20241206_052045.jpg" alt="Sites">
-            <p>Transport</p>
-        </div>
-        <div>
-            <img src="/T2-main/image/IMG_20241017_034009.jpg" alt="TikTok">
-            <p>TikTok</p>
-        </div>
-        <div>
-            <img src="twitter.png" alt="Twitter">
-            <p>Twitter</p>
-        </div>
+        </a>
     </div>
+    <div>
+        <a href="/T2-main/index4.html">
+            <img src="/T2-main/image/IMG_20241206_051919.jpg" alt="Facebook">
+            <p>Électroniques</p>
+        </a>
+    </div>
+    <div>
+        <a href="/T2-main/index4.html">
+            <img src="/T2-main/image/IMG_20241206_051940.jpg" alt="Instagram">
+            <p>Parfumeries</p>
+        </a>
+    </div>
+    <div>
+        <a href="/T2-main/index4.html">
+            <img src="/T2-main/image/IMG_20241206_052045.jpg" alt="Sites">
+            <p>Parapharmacies</p>
+        </a>
+    </div>
+    <div>
+        <a href="/T2-main/index4.html">
+            <img src="/T2-main/image/IMG_20241017_034009.jpg" alt="TikTok">
+            <p>Meubles</p>
+        </a>
+    </div>
+    <div>
+        <a href="/T2-main/index4.html">
+            <img src="twitter.png" alt="Twitter">
+            <p>Électroménager</p>
+        </a>
+    </div>
+  <div>
+  <a href="/T2-main/index4.html">
+            <img src="twitter.png" alt="Twitter">
+            <p>opticiens</p>
+        </a>
+    </div>
+</div>
     <div class="group-list">
         <div class="group-item">
-            <img src="image/Boutique/IMG_20241217_014044.png" alt="المجموعة 1">
+            <img src="/T2-main/image/boutique /r2/IMG_20241009_200601.jpg" alt="المجموعة 1">
             <h3>Boutique 1</h3>
         </div>
         <div class="group-item">
-            <img src="image/Boutique/images (12) (20).jpeg" alt="المجموعة 2">
+            <img src="/T2-main/image/boutique /r2/notre-merveilleux-restaurant.jpg" alt="المجموعة 2">
             <h3>Boutique 2</h3>
         </div>
         <div class="group-item">
-            <img src="image/Boutique/images (12) (21).jpeg" alt="المجموعة 3">
+            <img src="/T2-main/image/boutique /r2/IMG_20241009_200543.jpg" alt="المجموعة 3">
+            <h3>Boutique 3</h3>
+        </div>
+           <div class="group-item">
+            <img src="/T2-main/image/boutique /r2/bienvenue.jpg" alt="المجموعة 3">
             <h3>Boutique 3</h3>
         </div>
     </div>
@@ -296,20 +334,20 @@ body {
         <span>Accueil</span>
     </div>
     <div>
-        <i class="fas fa-video footer-icon"></i>
-        <span>Vidéos</span>
+   <i class="fas fa-book-open footer-icon" style="font-size: 21.5px;"></i>
+        <span>Guide</span>
     </div>
     <div>
-        <i class="fas fa-gamepad footer-icon"></i>
-        <span>Jeu</span>
+  <i class="fas fa-tags footer-icon"></i>
+        <span>Offres</span>
     </div>
     <div>
-        <i class="fas fa-folder footer-icon"></i>
-        <span>Dossiers</span>
+     <i class="fas fa-envelope footer-icon"></i>
+        <span>Message</span>
     </div>
     <div>
-        <i class="fas fa-user footer-icon"></i>
-        <span>Moi</span>
+     <i class="fas fa-question-circle footer-icon"></i>
+        <span>Aide</span>
     </div>
 </div>
   <script>
