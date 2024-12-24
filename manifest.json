@@ -1,7 +1,7 @@
 {
   "name": "Bons plans entre mjeziya ",
   "short_name": "Tnwork",
-  "start_url": "index2.html",
+  "start_url": "index.html",
    "scope": "/",
   "display": "standalone", 
   "background_color": "#ffffff",
