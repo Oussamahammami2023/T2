@@ -6,7 +6,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
   <title>The interface</title>
-  <link rel="stylesheet" href="./styles/style.css"> <!-- Ø±Ø§Ø¨Ø· Ù„Ù…Ù„Ù CSS -->
+  <link rel="stylesheet" href="./styles/style.css"> <!-- Ã˜Â±Ã˜Â§Ã˜Â¨Ã˜Â· Ã™â€žÃ™â€¦Ã™â€žÃ™Â CSS -->
       <link rel="manifest" href="manifest.json">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
   
@@ -21,7 +21,6 @@
     align-items: center;
     padding: 10px;
     background-color: #fff;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -94,19 +93,18 @@
     left: 0;
   }
   .nav a {
-    text-decoration: none; /* Ø¥Ø²Ø§Ù„Ø© Ø§Ù„Ø®Ø· Ø§Ù„Ø³ÙÙ„ÙŠ Ù…Ù† Ø§Ù„Ø±ÙˆØ§Ø¨Ø· */
-    color: inherit; /* Ø§Ø³ØªØ®Ø¯Ø§Ù… Ù†ÙØ³ Ù„ÙˆÙ† Ø§Ù„Ù†Øµ Ù…Ù† Ø§Ù„Ø¹Ù†ØµØ± Ø§Ù„Ø£Ø¨ */
+    text-decoration: none; /* Ã˜Â¥Ã˜Â²Ã˜Â§Ã™â€žÃ˜Â© Ã˜Â§Ã™â€žÃ˜Â®Ã˜Â· Ã˜Â§Ã™â€žÃ˜Â³Ã™ÂÃ™â€žÃ™Å  Ã™â€¦Ã™â€  Ã˜Â§Ã™â€žÃ˜Â±Ã™Ë†Ã˜Â§Ã˜Â¨Ã˜Â· */
+    color: inherit; /* Ã˜Â§Ã˜Â³Ã˜ÂªÃ˜Â®Ã˜Â¯Ã˜Â§Ã™â€¦ Ã™â€ Ã™ÂÃ˜Â³ Ã™â€žÃ™Ë†Ã™â€  Ã˜Â§Ã™â€žÃ™â€ Ã˜Âµ Ã™â€¦Ã™â€  Ã˜Â§Ã™â€žÃ˜Â¹Ã™â€ Ã˜ÂµÃ˜Â± Ã˜Â§Ã™â€žÃ˜Â£Ã˜Â¨ */
 }
    .nav {
     display: flex;
-    overflow-x: auto; /* Ø§Ù„Ø³Ù…Ø§Ø­ Ø¨Ø§Ù„ØªÙ…Ø±ÙŠØ± Ø§Ù„Ø£ÙÙ‚ÙŠ */
+    overflow-x: auto; /* Ã˜Â§Ã™â€žÃ˜Â³Ã™â€¦Ã˜Â§Ã˜Â­ Ã˜Â¨Ã˜Â§Ã™â€žÃ˜ÂªÃ™â€¦Ã˜Â±Ã™Å Ã˜Â± Ã˜Â§Ã™â€žÃ˜Â£Ã™ÂÃ™â€šÃ™Å  */
     white-space: nowrap;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 0px 0;
-    position: fixed;
-    top: 50px; /* Ù…Ø¨Ø§Ø´Ø±Ø© Ø£Ø³ÙÙ„ Ø§Ù„Ù‡ÙŠØ¯Ø± */
+    top: 50px; /* Ã™â€¦Ã˜Â¨Ã˜Â§Ã˜Â´Ã˜Â±Ã˜Â© Ã˜Â£Ã˜Â³Ã™ÂÃ™â€ž Ã˜Â§Ã™â€žÃ™â€¡Ã™Å Ã˜Â¯Ã˜Â± */
     left: 0;
     right: 0;
     z-index: 9;
@@ -125,9 +123,9 @@
   .nav div.active {
     font-weight: bold;
     padding-bottom: 5px;
-    color: transparent; /* Ù„Ø¬Ø¹Ù„ Ø§Ù„Ù†Øµ Ø´ÙØ§ÙÙ‹Ø§ ÙˆØ¥Ø¸Ù‡Ø§Ø± Ø§Ù„ØªØ¯Ø±Ø¬ */
-    background: linear-gradient(90deg, #6ec1ff, #ab47bc); /* ØªØ¯Ø±Ø¬ Ø£Ø²Ø±Ù‚ ÙØ§ØªØ­ Ù…Ø¹ Ø¨Ù†ÙØ³Ø¬ÙŠ */
-    -webkit-background-clip: text; /* Ø§Ù„ØªØ¯Ø±Ø¬ ÙŠØ¸Ù‡Ø± ÙÙ‚Ø· Ø¯Ø§Ø®Ù„ Ø§Ù„Ù†Øµ */
+    color: transparent; /* Ã™â€žÃ˜Â¬Ã˜Â¹Ã™â€ž Ã˜Â§Ã™â€žÃ™â€ Ã˜Âµ Ã˜Â´Ã™ÂÃ˜Â§Ã™ÂÃ™â€¹Ã˜Â§ Ã™Ë†Ã˜Â¥Ã˜Â¸Ã™â€¡Ã˜Â§Ã˜Â± Ã˜Â§Ã™â€žÃ˜ÂªÃ˜Â¯Ã˜Â±Ã˜Â¬ */
+    background: linear-gradient(90deg, #6ec1ff, #ab47bc); /* Ã˜ÂªÃ˜Â¯Ã˜Â±Ã˜Â¬ Ã˜Â£Ã˜Â²Ã˜Â±Ã™â€š Ã™ÂÃ˜Â§Ã˜ÂªÃ˜Â­ Ã™â€¦Ã˜Â¹ Ã˜Â¨Ã™â€ Ã™ÂÃ˜Â³Ã˜Â¬Ã™Å  */
+    -webkit-background-clip: text; /* Ã˜Â§Ã™â€žÃ˜ÂªÃ˜Â¯Ã˜Â±Ã˜Â¬ Ã™Å Ã˜Â¸Ã™â€¡Ã˜Â± Ã™ÂÃ™â€šÃ˜Â· Ã˜Â¯Ã˜Â§Ã˜Â®Ã™â€ž Ã˜Â§Ã™â€žÃ™â€ Ã˜Âµ */
     -webkit-text-fill-color: transparent;
     position: relative;
 }
@@ -136,9 +134,9 @@
     content: '';
     display: block;
     width: 100%;
-    height: 3px; /* Ø³Ù…Ùƒ Ø§Ù„Ø®Ø· Ø§Ù„Ø³ÙÙ„ÙŠ */
-    background: linear-gradient(90deg, #6ec1ff, #ab47bc); /* Ù†ÙØ³ Ø§Ù„ØªØ¯Ø±Ø¬ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… ÙÙŠ Ø§Ù„Ù†Øµ */
-    border-radius: 2px; /* Ù…Ù†Ø­Ù†ÙŠØ§Øª Ù„Ø·ÙŠÙØ© Ù„Ù„Ø®Ø· */
+    height: 3px; /* Ã˜Â³Ã™â€¦Ã™Æ’ Ã˜Â§Ã™â€žÃ˜Â®Ã˜Â· Ã˜Â§Ã™â€žÃ˜Â³Ã™ÂÃ™â€žÃ™Å  */
+    background: linear-gradient(90deg, #6ec1ff, #ab47bc); /* Ã™â€ Ã™ÂÃ˜Â³ Ã˜Â§Ã™â€žÃ˜ÂªÃ˜Â¯Ã˜Â±Ã˜Â¬ Ã˜Â§Ã™â€žÃ™â€¦Ã˜Â³Ã˜ÂªÃ˜Â®Ã˜Â¯Ã™â€¦ Ã™ÂÃ™Å  Ã˜Â§Ã™â€žÃ™â€ Ã˜Âµ */
+    border-radius: 2px; /* Ã™â€¦Ã™â€ Ã˜Â­Ã™â€ Ã™Å Ã˜Â§Ã˜Âª Ã™â€žÃ˜Â·Ã™Å Ã™ÂÃ˜Â© Ã™â€žÃ™â€žÃ˜Â®Ã˜Â· */
     position: absolute;
     bottom: 0;
     left: 0;
@@ -225,10 +223,10 @@
     background-image: linear-gradient(90deg, #6ec1ff, #ab47bc);
     -webkit-background-clip: text;
     
-    margin-bottom: 5px; /* Ù…Ø³Ø§ÙØ© Ø¨ÙŠÙ† Ø§Ù„Ø£ÙŠÙ‚ÙˆÙ†Ø© ÙˆØ§Ù„Ù†Øµ */
+    margin-bottom: 5px; /* Ã™â€¦Ã˜Â³Ã˜Â§Ã™ÂÃ˜Â© Ã˜Â¨Ã™Å Ã™â€  Ã˜Â§Ã™â€žÃ˜Â£Ã™Å Ã™â€šÃ™Ë†Ã™â€ Ã˜Â© Ã™Ë†Ã˜Â§Ã™â€žÃ™â€ Ã˜Âµ */
 }
 body {
-    margin-bottom: 60px; /* Ù„ØªØ¹ÙˆÙŠØ¶ Ø§Ø±ØªÙØ§Ø¹ Ø§Ù„ÙÙˆØªØ± */
+    margin-bottom: 60px; /* Ã™â€žÃ˜ÂªÃ˜Â¹Ã™Ë†Ã™Å Ã˜Â¶ Ã˜Â§Ã˜Â±Ã˜ÂªÃ™ÂÃ˜Â§Ã˜Â¹ Ã˜Â§Ã™â€žÃ™ÂÃ™Ë†Ã˜ÂªÃ˜Â± */
 }
 </style>
 
@@ -244,7 +242,7 @@ body {
     <li><a href="/T2-main/boutiques.html">Boutiques</a></li>
     <li><a href="/T2-main/restaurants.html">Restaurants</a></li>
     <li><a href="/T2-main/artisans.html">Artisans</a></li>
-    <li><a href="/T2-main/medecins.html">MÃ©decins</a></li>
+    <li><a href="/T2-main/medecins.html">MÃƒÂ©decins</a></li>
     <li><a href="/T2-main/avocats.html">Avocats</a></li>
     <li><a href="/T2-main/architectes.html">Architectes</a></li>
     <li><a href="/T2-main/comptables.html">Comptable</a></li>
@@ -257,8 +255,8 @@ body {
 <div class="active"><a href="#">Boutiques</a></div>
  <div><a href="/T2-main/index2.html">Restaurants</a></div>
   <div><a href="/T2-main/index3.html">Travaux</a></div>
-  <div><a href="/T2-main/index4.html">M</a>�decin&nbsp;</div>
-  <div>Éducation&nbsp;</div>
+  <div><a href="/T2-main/index4.html">M</a>édecin&nbsp;</div>
+  <div>Ã‰ducation&nbsp;</div>
     <div><a href="/T2-main/index6.html">Immobilier</a></div>
   <div><a href="//T2-main/index7.html">Services de mariage</a></div>
 </div>
@@ -268,13 +266,13 @@ body {
     <div>
         <a href="/T2-main/index3.html">
             <img src="https://raw.githubusercontent.com/Oussamahammami2023/T2/main/images/freepik-flat-modern-shopping-cart-logo-20241222231820srA5.png?1735183204646" alt="VidGame">
-            <p>VÃªtements</p>
+            <p>VÃƒÂªtements</p>
         </a>
     </div>
     <div>
         <a href="/T2-main/index4.html">
             <img src="https://raw.githubusercontent.com/Oussamahammami2023/T2/main/images/Boutique.png?1735183179855" alt="Facebook">
-            <p>Ã‰lectroniques</p>
+            <p>Ãƒâ€°lectroniques</p>
         </a>
     </div>
     <div>
@@ -298,38 +296,38 @@ body {
     <div>
         <a href="/T2-main/index4.html">
             <img src="https://github.com/Oussamahammami2023/T2/blob/15d75431973aa24aa18923a875d29628348f203a/images/Screenshot_2024-12-26-01-00-10-108_com.android.chrome.jpg" alt="Twitter">
-            <p>Ã‰lectromÃ©nagers</p>
+            <p>Ãƒâ€°lectromÃƒÂ©nagers</p>
         </a>
     </div>
       <div>
         <a href="/T2-main/index4.html">
             <img src="https://github.com/Oussamahammami2023/T2/blob/15d75431973aa24aa18923a875d29628348f203a/images/beauty-yourself-salon-booking-app_52683-38577.jpg" alt="Twitter">
-            <p>DÃ©corations</p>
+            <p>DÃƒÂ©corations</p>
         </a>
     </div>
 </div>
    <div class="group-list">
   <div class="group-item">
     
-      <a href="https://oussamahammami2023.github.io/Pwaap/"><img src="https://raw.githubusercontent.com/Oussamahammami2023/T2/main/images/Bou3.webp?1735183358244" alt="Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø© 1">
+      <a href="https://oussamahammami2023.github.io/Pwaap/"><img src="https://raw.githubusercontent.com/Oussamahammami2023/T2/main/images/Bou3.webp?1735183358244" alt="Ã˜Â§Ã™â€žÃ™â€¦Ã˜Â¬Ã™â€¦Ã™Ë†Ã˜Â¹Ã˜Â© 1">
       </a><h3><a href="https://oussamahammami2023.github.io/Pwaap/">Boutique&nbsp;</a>test</h3><a href="https://oussamahammami2023.github.io/Pwaap/">
     </a>
   </div>
   <div class="group-item">
-    <a href="Ø±Ø§Ø¨Ø·_Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø©_2">
-      <img src="https://raw.githubusercontent.com/Oussamahammami2023/T2/main/images/Bou1.jpg?1735183379023" alt="Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø© 2">
+    <a href="Ã˜Â±Ã˜Â§Ã˜Â¨Ã˜Â·_Ã˜Â§Ã™â€žÃ™â€¦Ã˜Â¬Ã™â€¦Ã™Ë†Ã˜Â¹Ã˜Â©_2">
+      <img src="https://raw.githubusercontent.com/Oussamahammami2023/T2/main/images/Bou1.jpg?1735183379023" alt="Ã˜Â§Ã™â€žÃ™â€¦Ã˜Â¬Ã™â€¦Ã™Ë†Ã˜Â¹Ã˜Â© 2">
       <h3>Boutique 2</h3>
     </a>
   </div>
   <div class="group-item">
-    <a href="Ø±Ø§Ø¨Ø·_Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø©_3">
-      <img src="https://raw.githubusercontent.com/Oussamahammami2023/T2/main/images/images (12) (29).jpeg?1735183397036" alt="Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø© 3">
+    <a href="Ã˜Â±Ã˜Â§Ã˜Â¨Ã˜Â·_Ã˜Â§Ã™â€žÃ™â€¦Ã˜Â¬Ã™â€¦Ã™Ë†Ã˜Â¹Ã˜Â©_3">
+      <img src="https://raw.githubusercontent.com/Oussamahammami2023/T2/main/images/images (12) (29).jpeg?1735183397036" alt="Ã˜Â§Ã™â€žÃ™â€¦Ã˜Â¬Ã™â€¦Ã™Ë†Ã˜Â¹Ã˜Â© 3">
       <h3>Boutique 3</h3>
     </a>
   </div>
   <div class="group-item">
-    <a href="Ø±Ø§Ø¨Ø·_Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø©_4">
-      <img src="https://github.com/Oussamahammami2023/T2/blob/15d75431973aa24aa18923a875d29628348f203a/images/smartphone-mockup-three-phone-screens-kitchen-tabletop_71042-743.jpg" alt="Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø© 4">
+    <a href="Ã˜Â±Ã˜Â§Ã˜Â¨Ã˜Â·_Ã˜Â§Ã™â€žÃ™â€¦Ã˜Â¬Ã™â€¦Ã™Ë†Ã˜Â¹Ã˜Â©_4">
+      <img src="https://github.com/Oussamahammami2023/T2/blob/15d75431973aa24aa18923a875d29628348f203a/images/smartphone-mockup-three-phone-screens-kitchen-tabletop_71042-743.jpg" alt="Ã˜Â§Ã™â€žÃ™â€¦Ã˜Â¬Ã™â€¦Ã™Ë†Ã˜Â¹Ã˜Â© 4">
       <h3>Boutique 4</h3>
     </a>
   </div>
