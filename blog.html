@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجات الأحذية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* يجعل الشبكة صفين */
+            gap: 5px;
+            padding: 5px;
+        }
+        .blog {
+            background-color: #fff;
+            border: 0.5px solid #ddd;
+            border-radius: 3px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            position: relative; /* تحديد موضع الحاوية */
+            display: flex;
+            flex-direction: column;
+            height: 100%; /* التأكد من ملء الحاوية بالكامل */
+        }
+        
+        .blog img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 5; /* تحديد نسبة العرض إلى الارتفاع */
+            object-fit: cover; /* يجعل الصورة تتناسب مع الحاوية */
+        }
+        .blog-info {
+            padding: 8px;
+            text-align: left; /* محاذاة النص إلى اليسار */
+            flex-grow: 1; /* السماح لهذا الجزء بالنمو لملء المساحة */
+            padding-bottom: 30px; /* إضافة مسافة أسفل النصوص لتفادي تداخل النصوص */
+        }
+        .blog-info p {
+            margin: 0; /* إزالة الهوامش الافتراضية بين الفقرات */
+        }
+        .description {
+            font-size: 13.5px;
+            color: ##1E1E26;
+            display: inline; /* جعل الوصف يظهر في نفس السطر مع التقييم */
+        }
+        .rating {
+            font-size: 13px;
+            font-weight: bold;
+            color: #555;
+            display: inline; /* جعل التقييم يظهر في نفس السطر مع الوصف */
+            margin-left: 10px; /* إضافة مسافة بين الوصف والتقييم */
+        }
+        .rating .stars {
+            color: #ff9900; /* لون النجوم */
+            margin-right: 3px; /* تقليل المسافة بين النجوم والتقييم */
+        }
+        .rating .score {
+            color: #989898; /* لون التقييم */
+        }
+        .price {
+            font-size: 17px;
+            color: #000;
+            font-weight: bold;
+            display: block;
+            position: relative;
+            top: 5px; /* لتحريك السعر للأسفل */
+        }
+        .alternating-titles {
+            font-size: 11px;
+            color: #555;
+            position: absolute; /* تحديد الموضع المطلق */
+            bottom: 0;
+            left: 5px;
+            right: 5px;
+            text-align: left;
+            overflow: hidden;
+            height: 16px;
+            display: flex;
+            align-items: center; /* محاذاة الأيقونة والنص بشكل أفقي */
+        }
+        .alternating-titles .map-icon {
+            margin-right: 5px; /* إضافة مسافة بين الأيقونة والنص */
+            color: #4CAF50; /* لون الأيقونة */
+        }
+        .alternating-titles span {
+            position: relative;
+            text-align: left;
+        }
+        .alternating-titles span:nth-child(1) {
+            animation-delay: 0s; /* العنوان الأول يظهر أولاً */
+        }
+
+        .alternating-titles span:nth-child(2) {
+            animation-delay: 3s; /* العنوان الثاني يظهر بعد 3 ثوانٍ */
+        }
+
+        @keyframes slide-up {
+            0% {
+                transform: translateY(100%); /* العنوان يبدأ من الأسفل */
+                opacity: 0;
+            }
+            25% {
+                transform: translateY(0); /* العنوان يظهر */
+                opacity: 1;
+            }
+            60% {
+                transform: translateY(0); /* العنوان يبقى في مكانه لفترة أطول */
+                opacity: 1;
+            }
+            85% {
+                transform: translateY(-100%); /* العنوان يتحرك إلى الأعلى */
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(-100%); /* العنوان يبقى مختفيًا في الأعلى */
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://example.com/blog1" class="blog">
+            <img src="/T2-main/image/blog /61TGQDLHOkL._AC_SR525,789_FMwebp_QL65_.webp" alt="Hello MrLin Men's Running Shoes">
+            <div class="blog-info">
+                <p class="description">Comfortable and lightweight running shoes, perfect for daily wear and sports.</p>
+                <p class="rating">
+                    <span class="stars">★</span>
+                    <span class="score">4.3</span>
+                </p>
+                <p class="price">46.00 TND</p>
+            </div>
+            <div class="alternating-titles">
+                <i class="fas fa-map-marker-alt map-icon"></i>
+                <span>livraison gratuite</span>
+            </div>
+        </a>
+        <a href="https://example.com/blog2" class="blog">
+            <img src="/T2-main/image/blog /717gFCbQylL._AC_SR525,789_FMwebp_QL65_.webp" alt="Mens Slip on Running Shoes">
+            <div class="blog-info">
+                <p class="description">Stylish and convenient slip-on design for easy wear.</p>
+                <p class="rating">
+                    <span class="stars">★</span>
+                    <span class="score">4.1</span>
+                </p>
+                <p class="price">32.00 TND</p>
+            </div>
+            <div class="alternating-titles">
+                <i class="fas fa-map-marker-alt map-icon"></i>
+                <span>livraison 3.00 TND</span>
+            </div>
+        </a>
+        <a href="https://example.com/blog3" class="blog">
+            <img src="/T2-main/image/blog /71yf27k2pIL._AC_SR525,789_FMwebp_QL65_.webp" alt="Adidas Sneakers">
+            <div class="blog-info">
+                <p class="description">High-quality sneakers with excellent durability and style.</p>
+                <p class="rating">
+                    <span class="stars">★</span>
+                    <span class="score">4.5</span>
+                </p>
+                <p class="price">55.00 TND</p>
+            </div>
+            <div class="alternating-titles">
+                <i class="fas fa-map-marker-alt map-icon"></i>
+                <span>livraison 3DT </span>
+            </div>
+        </a>
+        <a href="https://example.com/blog4" class="blog">
+            <img src="/T2-main/image/blog /71Z3FElgvRL._AC_SR525,789_FMwebp_QL65_.webp" alt="Best Seller Shoes">
+            <div class="blog-info">
+                <p class="description">The most popular shoes this season, combining fashion and comfort.</p>
+                <p class="rating">
+                    <span class="stars">★</span>
+                    <span class="score">4.7</span>
+                </p>
+                <p class="price">60.00 TND</p>
+            </div>
+            <div class="alternating-titles">
+                <i class="fas fa-map-marker-alt map-icon"></i>
+                <span> livraison gratuite</span>
+            </div>
+        </a>
+        <a href="https://example.com/blog1" class="blog">
+            <img src="/T2-main/image/blog /61TGQDLHOkL._AC_SR525,789_FMwebp_QL65_.webp" alt="Hello MrLin Men's Running Shoes">
+            <div class="blog-info">
+                <p class="description">Comfortable and lightweight running shoes, perfect for daily wear and sports.</p>
+                <p class="rating">
+                    <span class="stars">★</span>
+                    <span class="score">4.3</span>
+                </p>
+                <p class="price">46.00 TND</p>
+            </div>
+            <div class="alternating-titles">
+                <i class="fas fa-map-marker-alt map-icon"></i>
+                <span>livraison gratuite</span>
+            </div>
+        </a>
+        <a href="https://example.com/blog2" class="blog">
+            <img src="/T2-main/image/blog /717gFCbQylL._AC_SR525,789_FMwebp_QL65_.webp" alt="Mens Slip on Running Shoes">
+            <div class="blog-info">
+                <p class="description">Stylish and convenient slip-on design for easy wear.</p>
+                <p class="rating">
+                    <span class="stars">★</span>
+                    <span class="score">4.1</span>
+                </p>
+                <p class="price">32.00 TND</p>
+            </div>
+            <div class="alternating-titles">
+                <i class="fas fa-map-marker-alt map-icon"></i>
+                <span>livraison 3.00 TND</span>
+            </div>
+        </a>
+        <a href="https://example.com/blog3" class="blog">
+            <img src="/T2-main/image/blog /71yf27k2pIL._AC_SR525,789_FMwebp_QL65_.webp" alt="Adidas Sneakers">
+            <div class="blog-info">
+                <p class="description">High-quality sneakers with excellent durability and style.</p>
+                <p class="rating">
+                    <span class="stars">★</span>
+                    <span class="score">4.5</span>
+                </p>
+                <p class="price">55.00 TND</p>
+            </div>
+            <div class="alternating-titles">
+                <i class="fas fa-map-marker-alt map-icon"></i>
+                <span>livraison 3DT </span>
+            </div>
+        </a>
+        <a href="https://example.com/blog4" class="blog">
+            <img src="/T2-main/image/blog /71Z3FElgvRL._AC_SR525,789_FMwebp_QL65_.webp" alt="Best Seller Shoes">
+            <div class="blog-info">
+                <p class="description">The most popular shoes this season, combining fashion and comfort.</p>
+                <p class="rating">
+                    <span class="stars">★</span>
+                    <span class="score">4.7</span>
+                </p>
+                <p class="price">60.00 TND</p>
+            </div>
+            <div class="alternating-titles">
+                <i class="fas fa-map-marker-alt map-icon"></i>
+                <span> livraison gratuite</span>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
